@@ -17,6 +17,6 @@
       "@utils/*": ["utils/*"]
     }
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "api/**/*.ts"],
   "exclude": ["node_modules"]
 }
