@@ -14,9 +14,13 @@
       "@models/*": ["models/*"],
       "@middlewares/*": ["middlewares/*"],
       "@routes/*": ["routes/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@/*": ["*"]
     }
   },
-  "include": ["src/**/*.ts", "api/**/*.ts"],
+  
+  "import/no-duplicates": ["error", {"considerQueryString": true}],
+  "moduleResolution": "node",
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
